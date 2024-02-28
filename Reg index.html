@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input placeholder="Ayesha" id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Enter Your Last Name: <input placeholder="Ali" id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input placeholder="abc01@gmail.com" id="email" name="email" type="email" required /></label>
+        <label for="contact">Enter Your Contact No: <input placeholder="0332-1234567" id="contact" name="contact" type="text" required /></label>
+        <label for="address">Your Current Address:
+          <textarea id="address" name="address" rows="3" cols="30" placeholder="ABC, Colony, Karachi etc....."></textarea>
+        </label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+        <label for="Qualification">Select your Qualification
+          <select id="Qualification" name="Qualification">
+            <option value="">(select one)</option>
+            <option value="1">Matriculation</option>
+            <option value="2">Intermediate/Diploma</option>
+            <option value="3">Under-graduate</option>
+            <option value="4">Post-graduate</option>
+            <option value="5">PhD</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <h3>Please verify your documents</h3>
+        <label for="CNIC Front">Upload a CNIC (front side): <input id="CNIC Front" type="file" name="file" /></label>
+        <label for="CNIC Back">Upload a CNIC (back side): <input id="CNIC Back" type="file" name="file" /></label>
+        <label for="Educational document">Upload your Educational document(latest): <input id="Educational document" type="file" name="file" /></label>
+        <input type="submit" value="verify" />
+      </fieldset>
+      <fieldset>
+        <h4>Gender</h4>
+        <label for="Male"><input id="Male" type="radio" name="Male" class="inline" /> Male</label>
+        <label for="Female"><input id="Female" type="radio" name="Female" class="inline" /> Female</label>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Your age (years): <input id="age" type="number" name="age" min="15" max="100" /></label>
+        <label for="experience">Your Experience (years): <input id="experience" type="number" name="experience" min="0" max="80" /></label>
+      </fieldset>
+      <label for="terms-and-conditions" name="terms-and-conditions">
+        <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www./">terms and conditions</a>
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+  </html>
+  
